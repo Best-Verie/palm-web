@@ -62,6 +62,9 @@ a-row {
 .feature-desc p{
   font-size: 12px
 }
+.feature-desc h3{
+  font-weight: bold;
+}
 .desc-link{
     color:#FFD335;
 }

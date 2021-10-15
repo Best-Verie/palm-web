@@ -53,9 +53,14 @@
       <hr :style="hrStyles" />
     </section>
     <section>
-        
         <div class="features">
             <Features/>
+        </div>
+    </section>
+
+    <section>
+        <div class="clients">
+            <Clients/>
         </div>
     </section>
   </div>
@@ -63,12 +68,14 @@
 <script>
 import Header from "./header.vue";
 import Features from "./features.vue"
+import Clients from "./clients.vue"
 
 export default {
   name: "Home",
   components: {
     Header,
-    Features
+    Features,
+    Clients
   },
   data() {
     return {
@@ -129,5 +136,9 @@ img:nth-child(2) {
 }
 .features{
     margin-left:8em;
+}
+.clients{
+    margin-top: 4em;
+    margin-left: 3em;
 }
 </style>
