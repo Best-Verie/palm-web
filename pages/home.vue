@@ -128,6 +128,6 @@ img:nth-child(2) {
   z-index: -999;
 }
 .features{
-    margin-left:15em;
+    margin-left:8em;
 }
 </style>
