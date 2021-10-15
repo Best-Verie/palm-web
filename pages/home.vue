@@ -5,7 +5,7 @@
         <div class="navigation">
           <a-row>
             <a-col :xs="2" :sm="4" :md="6" :lg="4" :xl="10"></a-col>
-            <a-col :xs="2" :sm="4" :md="6" :lg="20" :xl="10">
+            <a-col :xs="2" :sm="4" :md="6" :lg="20" :xl="10" class="navbar">
               <a-menu v-model="current" mode="horizontal">
                 <a-menu-item key="home">
                   <a-icon type="home" />Home
@@ -81,6 +81,8 @@ export default {
     return {
       navigationStyles: {
         "font-size": "12px",
+        "background": "transparent",
+        // "z-index":"999"
       },
       headerStyles: {
         "font-weight": "light",
@@ -124,6 +126,13 @@ export default {
 .left-panel{
     width: 50%;
 }
+.navbar{
+  z-index: 2;
+  background: transparent;
+}
+a-menu{
+    background: transparent;
+}
 img:nth-child(2) {
   width: 30em;
 }
@@ -132,7 +141,8 @@ img:nth-child(2) {
   top: 0;
   right: 0;
   margin:0;
-  z-index: -999;
+  width: 30em;
+  /* z-index: -999; */
 }
 .features{
     margin-left:8em;
