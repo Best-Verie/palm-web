@@ -52,14 +52,23 @@
     <section>
       <hr :style="hrStyles" />
     </section>
+    <section>
+        
+        <div class="features">
+            <Features/>
+        </div>
+    </section>
   </div>
 </template>
 <script>
 import Header from "./header.vue";
+import Features from "./features.vue"
+
 export default {
   name: "Home",
   components: {
     Header,
+    Features
   },
   data() {
     return {
@@ -117,5 +126,8 @@ img:nth-child(2) {
   right: 0;
   margin:0;
   z-index: -999;
+}
+.features{
+    margin-left:15em;
 }
 </style>
